@@ -16,9 +16,6 @@ return new class extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->string('pict');
-            $table->string('pict2');
-            $table->string('pict3');
-            $table->string('pict4');
             $table->string('name');
             $table->integer('price');
             $table->integer('rating');
