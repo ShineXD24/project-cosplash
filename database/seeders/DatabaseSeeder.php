@@ -36,7 +36,5 @@ class DatabaseSeeder extends Seeder
             'price' => 100000,
             'rating' => 4,
         ]);
-
-
     }
 }
