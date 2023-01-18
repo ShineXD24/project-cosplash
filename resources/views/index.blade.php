@@ -9,7 +9,7 @@
                     @foreach ($data_cosplash as $cosplash)
                     <div class="col-sm">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" style="height: 50px" src="img/<?= $cosplash['pict'] ?>"
+                                <img class="card-img-top" style="height: 100px" src="img/<?= $cosplash['pict'] ?>"
                                     alt="pict">
                                 <div class="card-body">
                                     <p class="card-text"><?= $cosplash->name ?></p>
