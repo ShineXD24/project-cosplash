@@ -16,11 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
         Item::create([
-            'pict' => 'eula.jpg',
-            'name' => 'Eula',
+            'pict' => 'makima.png',
+            'name' => 'Makima',
             'price' => 100000,
-            'rating' => 5,
+            'rating' => 4,
+            'category' => 'Anime',
         ]);
 
         Item::create([
@@ -28,13 +30,15 @@ class DatabaseSeeder extends Seeder
             'name' => 'Eula',
             'price' => 100000,
             'rating' => 5,
+            'category' => 'Game',
         ]);
 
         Item::create([
-            'pict' => 'makima.png',
-            'name' => 'Makima',
+            'pict' => 'superhero.png',
+            'name' => 'super',
             'price' => 100000,
-            'rating' => 4,
+            'rating' => 5,
+            'category' => 'Super Hero',
         ]);
     }
 }
