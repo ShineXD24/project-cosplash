@@ -1,4 +1,4 @@
-{{-- <nav class="navbar navbar-expand-lg bg-dark ">
+<!-- {{-- <nav class="navbar navbar-expand-lg bg-dark ">
     <div class="container-fluid">
         <a class="navbar-brand text-light" href="/">Rumah Sakit</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -18,7 +18,7 @@
     <li class="nav-item"><a href="/session/logout" class="nav-link active text-light">Logout</a></li>
 </ul>
 </div>
-</nav> --}}
+</nav> --}} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

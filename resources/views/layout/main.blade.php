@@ -21,7 +21,7 @@
             @yield('container')
         </div>
 
-        <p class="text-light text-center mt-lg-5">&copy; created by Muhammad Surya Ibrahim</p>
+       
 
     </div>
 
