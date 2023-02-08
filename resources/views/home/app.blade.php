@@ -40,12 +40,12 @@
                     <div class="container">
                         <h1 class="text-light">NEW ARRIVALS</h1>
                         <div class="grid-container">
-                            @foreach ($data_cosplash as $cosplash)
+                            @foreach ($data_arrival as $arrival)
                                 <div class="grid-content">
                                     <div class="card border-0" style="width: 20rem;">
-                                        <img class="img-arrival" src="img/<?= $cosplash['pict'] ?>" alt="pict">
+                                        <img class="img-arrival" src="img/<?= $arrival['pict'] ?>" alt="pict">
                                         <div class="card-body">
-                                            <p class="card-text1"><?= $cosplash->category ?></p>
+                                            <p class="card-text1"><?= $arrival->category ?></p>
                                             <p class="card-text2">Explore Now!</p>
                                             <a href="#" class="stretched-link"></a>
                                             {{-- <i class="fa-solid fa-arrow-right"></i> --}}
@@ -65,10 +65,12 @@
             <div class="banner-content">
                 <img src="img/banner-img.png" class="img-banner" alt="">
                 <div class="container">
-                    <div class="text-1">PAYDAY SALE NOW</div>
+                    <div class="text-1"><span class="title1">PAYDAY</span> SALE NOW</div>
                     <div class="text-2">Spend minimal $100 get 30% off voucher code for your next purchase</div>
-                    <p class="text-3">1 June - 10 June 2021</p>
-                    <p class="text-4">*Terms & Conditions apply</p>
+                    <div class="wrap-text">
+                        <div class="text-3">1 June - 10 June 2021</div>
+                        <div class="text-4">*Terms & Conditions apply</div>
+                    </div>
                     <div class="btn btn-dark">
                         <a class="text-light">Shop Now</a>
                     </div>
@@ -78,10 +80,82 @@
     </section>
 
     <div class="wrapper">
-        <section class="">
-            <p>halo</p>
+        <section class="favorit">
+            <div class="max-width">
+                <div class="favorit-content">
+                    <div class="container">
+                        <h1 class="text-light">Young’s Favourite</h1>
+                        <div class="grid-container">
+                                <div class="grid-content">
+                                    <div class="card border-0" style="width: 34rem;">
+                                        <img class="img-favorit" src="img/trending.png" alt="pict">
+                                        <div class="card-body">
+                                            <p class="card-text1">Trending on instagram</p>
+                                            <p class="card-text2">Explore Now!</p>
+                                            <a href="#" class="stretched-link"></a>
+                                            {{-- <i class="fa-solid fa-arrow-right"></i> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-content">
+                                    <div class="card border-0" style="width: 34rem;">
+                                        <img class="img-favorit" src="img/all-under.png" alt="pict">
+                                        <div class="card-body">
+                                            <p class="card-text1">All Under $40</p>
+                                            <p class="card-text2">Explore Now!</p>
+                                            <a href="#" class="stretched-link"></a>
+                                            {{-- <i class="fa-solid fa-arrow-right"></i> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Cosplash</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Share Location</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ArrivalController;
+use App\Http\Controllers\FavoritController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/items', [ItemController::class, 'index']);
+Route::get('/', [ArrivalController::class, 'index']);
+// Route::get('/l', [FavoritController::class, 'index']);
+
+// Route::get('/', function() {
+//     $arrival = new ArrivalController;
+//     // $favorit = new FavoritController;
+
+//     $data1 = $arrival->index();
+//     // $data2 = $favorit->index();
+
+//     return view('home.app', ['data_arrival' => $data1]);
+// });

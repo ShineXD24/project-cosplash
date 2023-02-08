@@ -4,7 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Item;
+use App\Models\Arrival;
+use App\Models\Favorit;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,7 +18,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        Item::create([
+        Arrival::create([
+            'favorit_id' => 1,
             'pict' => 'makima.png',
             'name' => 'Makima',
             'price' => 100000,
@@ -25,7 +27,8 @@ class DatabaseSeeder extends Seeder
             'category' => 'Anime',
         ]);
 
-        Item::create([
+        Arrival::create([
+            'favorit_id' => 2,
             'pict' => 'eula.png',
             'name' => 'Eula',
             'price' => 100000,
@@ -33,12 +36,23 @@ class DatabaseSeeder extends Seeder
             'category' => 'Game',
         ]);
 
-        Item::create([
+        Arrival::create([
+            'favorit_id' => 2,
             'pict' => 'superhero.png',
             'name' => 'super',
             'price' => 100000,
             'rating' => 5,
             'category' => 'Super Hero',
+        ]);
+
+        Favorit::create([
+            'pict' => 'trending.png',
+            'title' => 'Trending on instagram',
+        ]);
+
+        Favorit::create([
+            'pict' => 'all-under.png',
+            'title' => 'All Under $40',
         ]);
     }
 }
