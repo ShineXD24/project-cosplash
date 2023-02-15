@@ -40,19 +40,39 @@
                     <div class="container">
                         <h1 class="text-light">NEW ARRIVALS</h1>
                         <div class="grid-container">
-                            @foreach ($data_arrival as $arrival)
-                                <div class="grid-content">
-                                    <div class="card border-0" style="width: 20rem;">
-                                        <img class="img-arrival" src="img/<?= $arrival['pict'] ?>" alt="pict">
-                                        <div class="card-body">
-                                            <p class="card-text1"><?= $arrival->category ?></p>
-                                            <p class="card-text2">Explore Now!</p>
-                                            <a href="#" class="stretched-link"></a>
-                                            {{-- <i class="fa-solid fa-arrow-right"></i> --}}
-                                        </div>
+                            <div class="grid-content">
+                                <div class="card border-0" style="width: 20rem;">
+                                    <img class="img-arrival" src="img/makima.png" alt="pict">
+                                    <div class="card-body">
+                                        <p class="card-text1">Anime</p>
+                                        <p class="card-text2">Explore Now!</p>
+                                        <a href="#" class="stretched-link"></a>
+                                        {{-- <i class="fa-solid fa-arrow-right"></i> --}}
                                     </div>
                                 </div>
-                            @endforeach
+                            </div>
+                            <div class="grid-content">
+                                <div class="card border-0" style="width: 20rem;">
+                                    <img class="img-arrival" src="img/shenhe.png" alt="pict">
+                                    <div class="card-body">
+                                        <p class="card-text1">Game</p>
+                                        <p class="card-text2">Explore Now!</p>
+                                        <a href="#" class="stretched-link"></a>
+                                        {{-- <i class="fa-solid fa-arrow-right"></i> --}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-content">
+                                <div class="card border-0" style="width: 20rem;">
+                                    <img class="img-arrival" src="img/superhero.png" alt="pict">
+                                    <div class="card-body">
+                                        <p class="card-text1">Super Hero</p>
+                                        <p class="card-text2">Explore Now!</p>
+                                        <a href="#" class="stretched-link"></a>
+                                        {{-- <i class="fa-solid fa-arrow-right"></i> --}}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,28 +106,28 @@
                     <div class="container">
                         <h1 class="text-light">Young’s Favourite</h1>
                         <div class="grid-container">
-                                <div class="grid-content">
-                                    <div class="card border-0" style="width: 34rem;">
-                                        <img class="img-favorit" src="img/trending.png" alt="pict">
-                                        <div class="card-body">
-                                            <p class="card-text1">Trending on instagram</p>
-                                            <p class="card-text2">Explore Now!</p>
-                                            <a href="#" class="stretched-link"></a>
-                                            {{-- <i class="fa-solid fa-arrow-right"></i> --}}
-                                        </div>
+                            <div class="grid-content">
+                                <div class="card border-0" style="width: 34rem;">
+                                    <img class="img-favorit" src="img/trending.png" alt="pict">
+                                    <div class="card-body">
+                                        <p class="card-text1">Trending on instagram</p>
+                                        <p class="card-text2">Explore Now!</p>
+                                        <a href="#" class="stretched-link"></a>
+                                        {{-- <i class="fa-solid fa-arrow-right"></i> --}}
                                     </div>
                                 </div>
-                                <div class="grid-content">
-                                    <div class="card border-0" style="width: 34rem;">
-                                        <img class="img-favorit" src="img/all-under.png" alt="pict">
-                                        <div class="card-body">
-                                            <p class="card-text1">All Under $40</p>
-                                            <p class="card-text2">Explore Now!</p>
-                                            <a href="#" class="stretched-link"></a>
-                                            {{-- <i class="fa-solid fa-arrow-right"></i> --}}
-                                        </div>
+                            </div>
+                            <div class="grid-content">
+                                <div class="card border-0" style="width: 34rem;">
+                                    <img class="img-favorit" src="img/all-under.png" alt="pict">
+                                    <div class="card-body">
+                                        <p class="card-text1">All Under $40</p>
+                                        <p class="card-text2">Explore Now!</p>
+                                        <a href="#" class="stretched-link"></a>
+                                        {{-- <i class="fa-solid fa-arrow-right"></i> --}}
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>

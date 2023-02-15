@@ -1,9 +1,7 @@
 <?php
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\ItemController;
 use App\Http\Controllers\loginController;
-use App\Http\Controllers\ArrivalController;
-use App\Http\Controllers\FavoritController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [ArrivalController::class, 'index']);
+Route::get('/', function () {
+    return view('login.index');
+});
+
+Route::get('/home', [HomeController::class, 'index'])->middleware('auth');
 // Route::get('/l', [FavoritController::class, 'index']);
 
 // Route::get('/', function() {
@@ -29,20 +31,14 @@ Route::get('/', [ArrivalController::class, 'index']);
 //     // $data2 = $favorit->index();
 
 
-
-Route::get('/login',[loginController::class,'index']);
-Route::get('/items', [ItemController::class, 'index']);
-Route::get('/register', [RegisterController::class, 'index']);
-
-
 route::group(['prefix' => '/login'], function(){
-    Route::get('/all', [LoginController:: class, 'index']);
+    Route::get('/all', [LoginController:: class, 'index'])->name('login')->middleware('guest');
     Route::post('/login', [LoginController:: class, 'login']);
 });
 // });
 
 route::group(['prefix' => '/register'], function(){
-    Route::get('/all', [RegisterController:: class, 'index']);
+    Route::get('/all', [RegisterController:: class, 'index'])->middleware('guest');
     Route::post('/create', [RegisterController:: class, 'create']);
     Route::get('/logout',[RegisterController::class,'logout']);
 });

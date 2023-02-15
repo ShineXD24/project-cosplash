@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 class loginController extends Controller
 {
-   
+
     function index()
     {
         return view('login.index');
@@ -31,7 +31,7 @@ class loginController extends Controller
         ];
 
         if (Auth::attempt($infologin)) {
-            return redirect('/')->with('success', 'Berhasil login');
+            return redirect('/home')->with('success', 'Berhasil login');
         } else {
             return redirect('login/all')->withErrors('Username dan password yang dimasukkan tidak valid');
         }

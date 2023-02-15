@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Arrival extends Model
+class Home extends Model
 {
     use HasFactory;
-
-
-    public function favorit(){
-        return $this->belongsTo(Favorit::class);
-    }
 }
