@@ -36,6 +36,7 @@ route::group(['prefix' => '/login'], function(){
     Route::post('/login', [LoginController:: class, 'login']);
 });
 // });
+Route::get('/reviews', [ReviewController::class, 'index']);
 
 route::group(['prefix' => '/register'], function(){
     Route::get('/all', [RegisterController:: class, 'index'])->middleware('guest');
