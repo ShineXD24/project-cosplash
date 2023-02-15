@@ -2,7 +2,8 @@
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\loginController;
-
+use App\Http\Controllers\ArrivalController;
+use App\Http\Controllers\FavoritController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [ArrivalController::class, 'index']);
+// Route::get('/l', [FavoritController::class, 'index']);
+
+// Route::get('/', function() {
+//     $arrival = new ArrivalController;
+//     // $favorit = new FavoritController;
+
+//     $data1 = $arrival->index();
+//     // $data2 = $favorit->index();
 
 
 
@@ -31,6 +39,7 @@ route::group(['prefix' => '/login'], function(){
     Route::get('/all', [LoginController:: class, 'index']);
     Route::post('/login', [LoginController:: class, 'login']);
 });
+// });
 
 route::group(['prefix' => '/register'], function(){
     Route::get('/all', [RegisterController:: class, 'index']);

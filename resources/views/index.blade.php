@@ -1,10 +1,9 @@
 @extends('layout.main')
 @section('container')
-    <div class="container">
+    <div class="container ">
 
         <div class="row">
             <div class="col-sm">
-                <h1 align="center" class=" text-light">Data Dokter</h1>
                 <div class="row">
                     @foreach ($data_cosplash as $cosplash)
                     <div class="col-sm">
