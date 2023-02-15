@@ -2,6 +2,7 @@
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,22 +22,14 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->middleware('auth');
-// Route::get('/l', [FavoritController::class, 'index']);
+Route::get('/reviews', [ReviewController::class, 'index'])->middleware('auth');
 
-// Route::get('/', function() {
-//     $arrival = new ArrivalController;
-//     // $favorit = new FavoritController;
-
-//     $data1 = $arrival->index();
-//     // $data2 = $favorit->index();
 
 
 route::group(['prefix' => '/login'], function(){
-    Route::get('/all', [LoginController:: class, 'index'])->name('login')->middleware('guest');
-    Route::post('/login', [LoginController:: class, 'login']);
+    Route::get('/all', [loginController:: class, 'index'])->name('login')->middleware('guest');
+    Route::post('/login', [loginController:: class, 'login']);
 });
-// });
-Route::get('/reviews', [ReviewController::class, 'index']);
 
 route::group(['prefix' => '/register'], function(){
     Route::get('/all', [RegisterController:: class, 'index'])->middleware('guest');

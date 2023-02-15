@@ -4,7 +4,7 @@
         <ul class="menu">
             <li><a href="/home" class="active">Home</a></li>
             <li><a href="#" class="active">Shop</a></li>
-            <li><a href="/review" class="active">Review</a></li>
+            <li><a href="/reviews" class="active">Review</a></li>
         </ul>
         <ul class="menu">
             {{-- <a href="/login/all" class="user"><i class="ri-user-fill"></i>Sign In</a> --}}

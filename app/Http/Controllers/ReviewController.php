@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 class ReviewController extends Controller
 {
     public function index(){
-        return view('review.index',[
-            "data_cosplash" => Item::all()
-        ]);
+        return view('review.index');
     }
 }
