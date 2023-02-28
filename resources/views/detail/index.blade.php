@@ -55,7 +55,7 @@
                 </div> <br>
                 <div class="checkout">
                     <a type="button" class="enter"> Enter Cart </a>
-                    <a type="button" class="enter"> Buy </a>
+                    <a type="button" class="enter" href="/payment"> Buy </a>
 
                 </div>
             </div>

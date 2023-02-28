@@ -76,7 +76,8 @@
                             <div class="col-10">
                                 <button class="btn btn-primary d-flex align-items-center justify-content-center"
                                     style="background-color: #5463FF; width: 100%; height: 35px;">
-                                    <span style="color: white; font-size: 15px">Pay Rp 1.967.960</span>
+                                    <a href="/home"><span style="color: white; font-size: 15px">Pay Rp 1.967.960</span></a>
+
                                 </button>
                                 <p style="color: #ACACAC; margin-top: 10px;">Your personal data will be used to process your
                                     order, support your experience throughout this website, and for other purposes described

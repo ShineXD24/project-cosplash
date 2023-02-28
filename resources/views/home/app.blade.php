@@ -55,7 +55,7 @@
                                     <div class="card-body">
                                         <p class="card-text1">Anime</p>
                                         <p class="card-text2">Explore Now!</p>
-                                        <a href="#" class="stretched-link"></a>
+                                        <a href="/detail" class="stretched-link"></a>
                                         {{-- <i class="fa-solid fa-arrow-right"></i> --}}
                                     </div>
                                 </div>
