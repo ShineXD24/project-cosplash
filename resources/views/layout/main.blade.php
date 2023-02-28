@@ -22,7 +22,7 @@
 
 <body class="">
     <div class="container py-5">
-            @include('partial.navbar')
+            {{-- @include('partial.navbar') --}}
         <div class="container">
             @yield('container')
         </div>

@@ -23,15 +23,30 @@ Route::get('/', function () {
     return view('login.index');
 });
 
-Route::get('/home', [HomeController::class, 'index'])->middleware('auth');
-Route::get('/reviews', [ReviewController::class, 'index'])->middleware('auth');
+Route::get('/shop', [ShopController::class, 'index'])->middleware('auth');
 
+Route::get('/home', function () {
+    return view('home.app');
+})->middleware('auth');
+
+Route::get('/reviews', function () {
+    return view('review.index');
+})->middleware('auth');
+
+Route::get('/detail', function () {
+    return view('detail.index');
+})->middleware('auth');
+
+
+Route::get('/payment', function () {
+    return view('payment.all');
+})->middleware('auth');
 
 
 route::group(['prefix' => '/login'], function(){
     Route::get('/all', [loginController:: class, 'index'])->name('login')->middleware('guest');
     Route::post('/login', [loginController:: class, 'login']);
-});
+})->middleware('auth');
 
 route::group(['prefix' => '/register'], function(){
     Route::get('/all', [RegisterController:: class, 'index'])->middleware('guest');
@@ -39,17 +54,3 @@ route::group(['prefix' => '/register'], function(){
     Route::get('/logout',[RegisterController::class,'logout']);
 });
 
-Route::get('/detail', function () {
-    return view('detail.index');
-});
-
-
-// Route::get('/shop', function () {
-//     return view('shop.index');
-// });
-
-Route::get('/payment', function () {
-    return view('payment.all');
-});
-
-Route::get('/shop', [ShopController::class, 'index']);

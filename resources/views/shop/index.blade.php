@@ -1,4 +1,5 @@
 @extends('layout.main')
+@include('partial.navbar')
 @section('container')
     <link href="{{ asset('css/bootstrap-slider.min.css') }}" rel="stylesheet">
     <script src="{{ asset('js/bootstrap-slider.min.js') }}"></script>
@@ -14,7 +15,13 @@
             color: black;
             font-size: 10px
         }
+
+        .container {
+            margin-top: 1.8%;
+        }
     </style>
+
+
 
     <div class="container">
         <div class="row">

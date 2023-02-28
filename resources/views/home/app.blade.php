@@ -35,7 +35,7 @@
                         <div class="text-1">LET’S EXPLORE COSTUME COSPLAY.</div>
                         <div class="text-2">Live for Influential and Innovative fashion!</div>
                         <div class="btn btn-dark">
-                            <a class="text-light" href="#">Shop Now</a>
+                            <a class="text-light" href="/shop">Shop Now</a>
                         </div>
                     </div>
                     <img src="img/hero-img.png" class="img-hero" alt="">
@@ -101,7 +101,7 @@
                         <div class="text-4">*Terms & Conditions apply</div>
                     </div>
                     <div class="btn btn-dark">
-                        <a class="text-light">Shop Now</a>
+                        <a class="text-light" href="/shop">Shop Now</a>
                     </div>
                 </div>
             </div>
