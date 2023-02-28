@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReviewController;
@@ -36,3 +37,5 @@ route::group(['prefix' => '/register'], function(){
     Route::post('/create', [RegisterController:: class, 'create']);
     Route::get('/logout',[RegisterController::class,'logout']);
 });
+Route::get('/detail', [DetailController::class, 'indexdetail']);
+
