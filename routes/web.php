@@ -37,5 +37,8 @@ route::group(['prefix' => '/register'], function(){
     Route::post('/create', [RegisterController:: class, 'create']);
     Route::get('/logout',[RegisterController::class,'logout']);
 });
-Route::get('/detail', [DetailController::class, 'indexdetail']);
+
+Route::get('/detail', function () {
+    return view('detail.index');
+});
 

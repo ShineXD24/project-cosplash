@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="logo/purple.png">
 </head>
 
 <body>
     <section class="detailbg" id="detailbg">
-        @include ('partial.navbar')
+        @include('partial.navbar')
         <div class="row">
             <div class="box">
                 <img src="img/product1.png" alt="">
@@ -54,7 +54,7 @@
                     <a type="button" class="btn info">L</a>
                 </div> <br>
                 <div class="checkout">
-                    <a type="button" class="enter"> Enter Cart </a> 
+                    <a type="button" class="enter"> Enter Cart </a>
                     <a type="button" class="enter"> Buy </a>
 
                 </div>
