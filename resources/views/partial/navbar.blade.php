@@ -1,4 +1,4 @@
-<nav>
+{{-- <nav>
     <div class="header">
         <img src="logo/purple.png" class="logo" style="height: 60px">
         <ul class="menu">
@@ -11,4 +11,4 @@
             <a href="/register/logout">Logout</a>
         </ul>
     </div>
-</nav>
+</nav> --}}

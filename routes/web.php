@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DetailController;
+use App\Http\Controllers\ShopController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReviewController;
@@ -42,3 +43,13 @@ Route::get('/detail', function () {
     return view('detail.index');
 });
 
+
+// Route::get('/shop', function () {
+//     return view('shop.index');
+// });
+
+Route::get('/payment', function () {
+    return view('payment.all');
+});
+
+Route::get('/shop', [ShopController::class, 'index']);

@@ -11,6 +11,13 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/style.css">
     <title>Cosplash</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="">
