@@ -2,79 +2,64 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     list-style: none;
+
 }
 :root{
-    --bg-color: #2B292E;
+    --bg-color: #171617;
     --text-color: #AFAFAF;
     --main-color: #8E9FFF;
 }
-.body{
-    min-height: 100vh;
-    background: var(--bg-color);
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    display: flex;
     color: var(--text-color);
 }
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+.header{
+    z-index: 1;
     display: flex;
+    position: fixed;
+    background: var(--bg-color);
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
+    padding: 1% 8%;
     transition: all .50s ease;
-}
-.logo{
-   height: 1;
-   width: 10;
-}
-.navbar{
+}   
+.content {
     display: flex;
 }
-.navbar a{
-    padding: 5px 0;
-    margin: 0px 30px;
+.content a{
+    text-decoration:none;
+    margin: 0px 40px;
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
 }
-.navbar a:hover{
+.content a:hover{
     color: var(--main-color);
 }
 .main{
     display: flex;
-    align-items: center;
 }
 .main a{
-    margin-right: 25px;
-    margin-left: 10px;
+    text-decoration:none;
+    margin-right: 20px;
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
 }
-.user{
-    display: flex;
-    align-items: center;
-}
-.user if{
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;
-}
-.main a:hover{
-    color: var(--main-color);
-}
+
 #menu-icon{
     font-size: 35px;
     color: var(--text-color);
     cursor: pointer;
-    z-index: 10001;
+    z-index: 1;
     display: none;
 }
