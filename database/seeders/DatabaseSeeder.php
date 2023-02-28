@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Arrival;
 use App\Models\Favorit;
+use App\Models\Shop;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArrivalController;
+use App\Http\Controllers\ShopController;
 use App\Http\Controllers\FavoritController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,13 @@ Route::get('/', [ArrivalController::class, 'index']);
 
 //     return view('home.app', ['data_arrival' => $data1]);
 // });
+
+// Route::get('/shop', function () {
+//     return view('shop.index');
+// });
+
+Route::get('/payment', function () {
+    return view('payment.all');
+});
+
+Route::get('/shop', [ShopController::class, 'index']);

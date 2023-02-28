@@ -1,7 +1,6 @@
 @extends('layout.main')
 @section('container')
     <div class="container ">
-
         <div class="row">
             <div class="col-sm">
                 <div class="row">
