@@ -132,7 +132,6 @@
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
-            
         </div>
 
         @include('partial.footer')

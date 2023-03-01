@@ -140,9 +140,9 @@
                         <a href="#">Forgot Password?</a>
                     </div>
                     <button class="btn w-100" class="btn" style="background-color: #7B93FF; color: white;"
-                        name="submit" type="submit">Login</button>
+                        name="submit" type="submit">Register</button>
                     <div class="mt-3 text-center text-dark">
-                        <p>Don't have an account? <a href="/login/all">Register</a></p>
+                        <p>Don't have an account? <a href="/login/all">Login</a></p>
                     </div>
                 </form>
             </div>
